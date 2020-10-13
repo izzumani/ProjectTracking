@@ -31,6 +31,7 @@ class Project < ApplicationRecord
     end
 
     def current_rate
+        
         completed_velocity * 1.0/Project.velocity_length_in_days
     end
 
